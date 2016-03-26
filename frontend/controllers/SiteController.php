@@ -74,6 +74,30 @@ class SiteController extends Controller
     {
         return $this->render('index');
     }
+/**
+ * เขียน action Url เพิ่มเติมทดสอบการส่งค้าง จาก controller ไปยัง view
+ */
+    /**
+  //ส่งค่าว่าง     
+  //public function  actionUrl($data=NULL,$id=NULL)
+    {
+                
+        return $this->render('url',[
+            'data'=>$data,
+            'id'=>$id]);
+     }
+**/
+    public function  actionUrl()
+    {
+        $fname='TINNAGORN';
+        $lname='JULKEAW';
+        
+        return $this->render('url',[
+            'fname'=>$lname,
+            'lname'=>$lname]);
+             
+          }
+            
 
     /**
      * Logs in a user.
